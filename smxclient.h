@@ -30,6 +30,10 @@ SMXAPI void SMXCALL SMX_End_SPT(void);
 SMXAPI void SMXCALL SMX_Begin_CUT(void);
 SMXAPI void SMXCALL SMX_End_CUT(void);
 
+//$ CST = Custom Update .
+SMXAPI void SMXCALL SMX_Begin_CUS(void);
+SMXAPI void SMXCALL SMX_End_CUS(char *);
+
 
 #ifdef __cplusplus
 } 
