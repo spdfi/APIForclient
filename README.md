@@ -2,7 +2,7 @@ This README contains details about the Speedmetrix.
 
 The Speedmetrix (SMX) Agent is a small footprint library and standalone app for multiple operating systems. The Agent components are designed to offload measurement of Edge Computing performance gain metrics from client apps. Data collection and Presentation of the same with analytics are presented to Network Engineers as and when needed on the SpeedMetrix Server dashboard.
 
-The Client side agent consists of the two following components
+The Client side agent consists of the three following components
 
 > A standalone app that continuosly monitors Round Trip and One Way Delays along with Jitter over the Network. This app needs to run on the client machine as a background task with user defined periodicity. This app has no special requirement on the client side applications.
 
