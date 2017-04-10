@@ -18,7 +18,7 @@ extern "C"
 	// BEGIN APIs always return without delays and can be used safely without
 	// any bearing on added latency. 
 
-	/*
+	///*
 	//4DLL
 	// SDT = Service Setup Time
 	SMXAPI void SMXCALL SMX_Begin_SST(void);
@@ -34,24 +34,31 @@ extern "C"
 
 	//$ CST = Custom Update .
 	SMXAPI void SMXCALL SMX_Begin_CUS(void);
-	SMXAPI void SMXCALL SMX_End_CUS(char *);
-	*/
+	SMXAPI void SMXCALL SMX_End_CUS(const char *);
 
-	
+	//$ Measurement with URL
+	SMXAPI void SMXCALL SMX_Begin_MEAS(const char *);
+	SMXAPI void SMXCALL SMX_End_MEAS();
+	//*/
+
+	/* 
 	//4sharedLib
 	// SDT = Service Setup Time
-	 void  SMX_Begin_SST(void);
-	 void  SMX_End_SST(void);
+	 void SMXCALL SMX_Begin_SST(void);
+	 void SMXCALL SMX_End_SST(void);
 	// SPT = Service Processing Time
-	 void  SMX_Begin_SPT(void);
-	 void  SMX_End_SPT(void);
+	 void SMXCALL SMX_Begin_SPT(void);
+	 void SMXCALL SMX_End_SPT(void);
 	// CUT = Context Update Time.
-	 void  SMX_Begin_CUT(void);
-	 void  SMX_End_CUT(void);
+	 void SMXCALL SMX_Begin_CUT(void);
+	 void SMXCALL SMX_End_CUT(void);
 	//$ CST = Custom Update .
-	 void  SMX_Begin_CUS(void);
-	 void  SMX_End_CUS(const char *);
-	 
+	 void SMXCALL SMX_Begin_CUS(void);
+	 void SMXCALL SMX_End_CUS(const char *);
+	 //$ Measurement with URL
+	 void SMX_Begin_MEAS(const char *);
+	 void SMX_End_MEAS(const char *);
+	*/
 
 #ifdef __cplusplus
 }
