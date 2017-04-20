@@ -31,3 +31,4 @@ For SPT / SSPT type of measurements, the apps can make start and end SMXAPI call
 - ....
 
 and so on. For collecting these metrics, the speedmetrix library / dll shall be configured to transfer the metrics to the central server (209.20.93.217) directly for the purpose of this POC only. From the app's perspective, nothing changes except that they will need to use custom service tags per server. Also, the configSMX.txt file shall be configured to point to ws://209.20.93.217:8282
+Please use SMXclientDynamicDLL.dll	(testing port 8383) for the POC as the port is hardcoded to 8383.
